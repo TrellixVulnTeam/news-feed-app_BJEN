@@ -32,6 +32,7 @@ const cssLoaders = (extra) => {
         {
             loader: MiniCssExtractPlugin.loader,
         },
+        { loader: "css-modules-typescript-loader"},
         'css-loader'
     ]
 
@@ -95,7 +96,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: cssLoaders()
+                use: cssLoaders(),
             },
             {
                 test: /\.less$/,
@@ -104,6 +105,13 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: cssLoaders('sass-loader')
+            },
+            {
+                test: /\.css$/i,
+                loader: "css-loader",
+                options: {
+                    modules: true,
+                }
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,

@@ -1,0 +1,30 @@
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-modules-typescript-loader/index.js!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.scss ***!
+  \**************************************************************************************************************************************************************/
+body {
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+* {
+  font-family: "Inter", system-ui;
+}
+
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1260px;
+  margin: 50px auto;
+}
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-modules-typescript-loader/index.js!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./features/Cards.scss ***!
+  \***********************************************************************************************************************************************************************/
+.cardWrapper {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map*/
