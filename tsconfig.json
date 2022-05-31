@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "jsx": "react",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "src"
+  ]
+}
