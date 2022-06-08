@@ -1,17 +1,161 @@
-.cardWrapper {
+/* родитель */
+.block{
+
+}
+
+/* flex-контейнер */
+.block__row{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/* flex-элемент */
+.block__element{
+
+}
+
+/* flex-элемент №1 */
+.block__element_1{
+  flex: 1 1 auto;
+  width: 40%;
+  height: 600px;
+  margin: 10px;
+  @media screen and (min-width: 660px) and (max-width: 1259px) {
+    width: 50%;
+    height: 400px;
+  }
+}
+.container__card{
   display: flex;
   flex-direction: column;
-  .imageWrap{
-    .image{
 
-    }
-  }
-  .textField{
-    .textHeader{
+}
+.block__image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgrey;
+  height: 500px;
+  border-radius: 12px;
+}
+.image{
+  color: red;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+}
+.block__topic{
+  margin-left: 5px;
+  border: 2px dashed lightblue;
+  width: 50px;
+  height: 10px;
+}
 
-    }
+/* flex-элемент №2 */
+.block__element_2{
+  width: 25%;
+  height: 600px;
+  margin: 10px;
+  @media screen and (min-width: 660px) and (max-width: 1259px) {
+    width: 40%;
+    height: 400px;
   }
-  .topic{
+}
+.wrapperCards{
+  display: flex;
+  flex-direction: column;
+
+}
+.container__card2{
+  margin-bottom: 15px;
+
+}
+.container__card2, .container__card3 {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 15px;
+}
+.block__image2, .block__image3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgrey;
+  height: 190px;
+  border-radius: 12px;
+}
+.image2, .image3{
+  color: red;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+}
+
+
+/* flex-элемент №3 */
+.block__element_3 {
+
+  width: 30%;
+  height: 600px;
+  margin: 10px;
+  @media screen and (min-width: 660px) and (max-width: 1259px) {
+    height: 200px;
+  }
+
+  .wrapperCards3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__card4, .container__card5, .container__card6, .container__card7{
+    margin-bottom: 10px;
 
   }
+
+  .container__card4, .container__card5, .container__card6, .container__card7, .container__card8 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .block__image4, .block__image5, .block__image6, .block__image7, .block__image8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    height: 102px;
+    width: 180px;
+    border-radius: 12px;
+    margin-right: 10px;
+  }
+
+  .image4, .image5, .image6, .image7, .image8 {
+    color: red;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+  }
+
+}
+
+
+
+/* контент */
+.block__content{
+
+
+  /* плюс прочие стили для текста, отступы */
 }
